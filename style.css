@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP');
+
+
+a {
+  text-decoration: none;
+}
+
+header img {
+  position: absolute;
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+
+  z-index: -1;
+}
+
+header {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  
+  opacity: 0.7;
+}
+
+
+
+header h1 {
+  font-family: 'Noto Serif JP', sans-serif;
+  writing-mode: vertical;
+  font-size: 100px;
+  color: white;
+  text-shadow: 1px 1px 0 #666, 2px 2px 0 #666, 3px 3px 0 #666;
+  text-align: center;
+  margin-top: 100px;
+}
+
+
+
+ul {
+  text-align: center;
+  display: inline;
+  
+  width: 100%;
+
+}
+
+li {
+  text-align: center;
+  line-height: 2;
+  font-weight: bold;
+  width: 150px;
+  font-size: 25px;
+  color: white;
+  text-shadow: 1px 1px 0 #666, 2px 2px 0 #666, 3px 3px 0 #666;
+  list-style: none;
+  font-family: 'Noto Serif JP', sans-serif;
+  writing-mode: vertical;
+  margin-left: 40%;
+}
+
+li:hover {
+  background-size: cover;
+  background-position: center;
+}
+
+main {
+  z-index: 2;
+  position: relative;
+  top: 500px;
+
+}
+
+#cafe {
+  z-index: 1;
+
+  object-fit: cover;
+
+}
+
+.fixedimg {
+  background-image: url(S__74719253_0.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+  position: relative;
+  text-align: center;
+  line-height: 50vh;
+}
+
+
+
+.spot img {
+  position: relative;
+  overflow: hidden;
+}
+
+.pic {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+h2 {
+  font-family: 'Noto Serif JP', sans-serif;
+  text-align: center;
+  font-size: 70px;
+  color: rgb(128, 110, 87);
+}
+
+.fuwafuwa {
+  animation: fuwafuwa 3s ease-in-out infinite alternate;
+  
+  
+  transition: 1.5s ease-in-out;
+
+}
+
+
+@keyframes fuwafuwa {
+  0% {
+    transform: translate(0, 0) rotate(-7deg);
+  }
+
+  50% {
+    transform: translate(0, -7px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(0, 0) rotate(7deg);
+  }
+}
+
+
+.spot {
+  display: inline-table;
+  margin: 20px;
+  margin-top: 10;
+  background-color: rgb(251, 251, 251);
+}
+
+.spot .item {
+  transition: all 0.3s ease;
+  box-shadow: 0 0 8px 4px #ccc;
+}
+
+.spot {
+  filter: drop-shadow(1px 3px 5px rgba(0, 0, 0, 0.5));
+}
+
+.pic {
+  vertical-align: top;
+}
+
+.spot .spot-text {
+  padding: 30px;
+}
+
+
+
+.spot .spot-sentence {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.spot .date {
+  font-size: 0.75rem;
+  text-align: right;
+}
+
+
+
+
+#contact {
+  font-size: 20px;
+  font-weight: bold;
+  width: 100%;
+  height: 100vh;
+  background-image: url(S__74719256.jpg);
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.form-item {
+  padding: 200px 0;
+  width: 70%;
+  margin: 0 auto;
+  color: rgb(39, 29, 19);
+}
+
+.item-info p {
+  font-family: 'Noto Serif JP', sans-serif;
+  text-align: center;
+}
+
+.popup {
+  text-align: center;
+}
+
+input {
+  padding: 10px 0;
+  margin: 30px 0;
+  width: 100%;
+}
+
+textarea {
+  margin: 30px 0;
+  padding: 10px 0;
+  width: 100%;
+}
+
+#contact button {
+  margin: 0 auto;
+  display: block;
+  padding: 10px 100px;
+  color: rgb(61, 48, 48);
+  font-weight: bold;
+  font-size: 20px;
+  background-color: white;
+  background-size: 200% 100%;
+}
+
+#contact button:hover {
+  background-position: 100% 0;
+}
+
+#footer {
+  font-size: 0.5rem;
+  padding: 10px 0;
+  text-align: center;
+}
+
+@media(min-width:365px) {
+header h1{
+    font-size:75px ;
+  }
+  h2{
+    font-size: 60px;
+  }
+  .spot {
+    margin-left: 10%;
+  }
+  li{
+    margin-left: 38%;
+  }
+
+  img{
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width:365px) and (min-width: 768px)  {
+  .spot {
+    margin-left: 6%;
+  }
+  li{
+    margin-left: 41%;
+  }
+
+}
+
+@media(min-width:1280px) {
+  .spot {
+    margin-left: 3%;
+  }
+li{
+  margin-left: 43%;
+}
+}
